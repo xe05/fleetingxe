@@ -1,10 +1,7 @@
 title: fleetingXe's Journal of Floating Atoms
-description: This is test.
+description: My thoughts are made of atoms. They exist to be seen and read.
 theme: just-the-docs
-
 url: https://xe05.github.io/fleetingxe
-
 plugins:
   - jekyll-default-layout
-
 color_scheme: dark
