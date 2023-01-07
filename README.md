@@ -13,4 +13,5 @@ The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party 
 ----
 [Just the Docs]: https://just-the-docs.github.io/just-the-docs/
 [MIT License]: https://en.wikipedia.org/wiki/MIT_License
+[starter workflows]: https://github.com/actions/starter-workflows/blob/main/pages/jekyll.yml
 [actions/starter-workflows]: https://github.com/actions/starter-workflows/blob/main/LICENSE
