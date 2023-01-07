@@ -25,6 +25,7 @@ I made the table of contents to list the games by the year I played. I considere
 - Whitehack (2022 - present), Pbp
 - Void Priestess » *Hitobito No Hikari - Heian Jidai* (2022 - present), Pbp
 - The Last Tea Shop (2022 - present), Pbp
+- The Electrum Archives, (2022 - present), Pbp
 
 ### On Hiatus
 - Mothership RPG
