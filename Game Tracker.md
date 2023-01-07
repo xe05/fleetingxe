@@ -19,8 +19,8 @@ I made the table of contents to list the games by the year I played. I considere
     - The Mall (2022 - present), Pbp
 - Old School Essentials
     - The Incandescent Grottoes (2022 - present), Zoom
-- Wildsea (2022 - Present), Pbp
-- Pokemon Grim (2022 - Present), Pbp
+- Wildsea (2022 - present), Pbp
+- Pokemon Grim (2022 - present), Pbp
 - DIE RPG (In preparation), Pbp
 - Whitehack (2022 - present), Pbp
 - Void Priestess » *Hitobito No Hikari - Heian Jidai* (2022 - present), Pbp
