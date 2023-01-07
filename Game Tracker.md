@@ -7,7 +7,7 @@ has_children: true
 
 # Game Tracker
 
-I made the table of contents to list the games by the year I played. I considered the word "play" in both running as GM and playing as player in any games. However, there are some ongoing campaigns that I am currently playing - see below.
+I made the table of contents to list the games by the year I played. I considered the word "play" in both running as GM and playing as player in any games. However, there are some ongoing campaigns that I am currently playing.
 
 ## Ongoing Campaigns
 - Project Hunger » *The Resistance Toolbox by RRD* (2022 - present)
