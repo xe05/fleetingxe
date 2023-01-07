@@ -51,3 +51,4 @@ I made the table of contents to list the games by the year I played. I considere
 - *Woodfall*, Cairn, 2021
 - *The Black Pyramid*, MoSh 0e, 2021
 - Overlight RPG, 2021
+- *Forest of Primordia*, Troika!, 2022
