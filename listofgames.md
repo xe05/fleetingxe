@@ -2,6 +2,7 @@
 title: Game Tracker
 layout: default
 nav_order: 2
+has_children: true
 ---
 
 # <b>List of Games</b>
