@@ -4,8 +4,7 @@ theme: just-the-docs
 
 url: https://xe05.github.io/fleetingxe
 
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
-
 plugins:
   - jekyll-default-layout
+
+color_scheme: dark
