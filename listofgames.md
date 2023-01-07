@@ -16,11 +16,11 @@ This is my tracking list of games I ran or played over time.
 
 
 ## 2021
-Videochat
+<b> Videochat </b>
 - Dungeons & Dragons, 5e
 - Mothership 0e
 
 Play-by-Post
 - Dungeons & Dragons, 5e
-- The Strange, Cypher System
+- <i>The Strange</i>, Cypher System
 - Monster of the Week
