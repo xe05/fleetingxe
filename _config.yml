@@ -4,4 +4,5 @@ theme: just-the-docs
 url: https://xe05.github.io/fleetingxe
 plugins:
   - jekyll-default-layout
+  - jekyll-seo-tag
 color_scheme: dark
