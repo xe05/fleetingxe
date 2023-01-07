@@ -6,6 +6,7 @@ plugins:
   - jekyll-default-layout
   - jekyll-seo-tag
 color_scheme: dark
+heading_anchors: true
 
 # Set a path/url to a favicon that will be displayed by the browser
 favicon_ico: "/assets/images/favicon.ico"
