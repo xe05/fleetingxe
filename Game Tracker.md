@@ -38,6 +38,7 @@ I made the table of contents to list the games by the year I played. I considere
 - *The Vermissan Ops*, Heart RPG, 2022
 - *Piana* (homebrew), 2022
 - D&D5e
+    - *Dawnhome*, 2022
     - *Curse of the Strahd*, 2021
     - *Mortal Wounds*, 2022
     - *Wild Beyond the Witchlight*, 2021
