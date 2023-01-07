@@ -10,10 +10,10 @@ has_children: true
 I made the table of contents to list the games by the year I played. I considered the word "play" in both running as GM and playing as player in any games. However, there are some ongoing campaigns that I am currently playing.
 
 ## Ongoing Campaigns
-- Project Hunger » *The Resistance Toolbox by RRD* (2022 - present)
-- D&D5e (Play-by-Post aka Pbp)
-    - Infernal Build Machine (2020 - present)
-    - Frostland » *Icewind Dale: Rime of the Frostmaiden* (2021 - present)
+- *Project Hunger* » The Resistance Toolbox by RRD (2022 - present)
+- D&D5e (Play-by-Post aka "Pbp")
+    - Infernal Machine Rebuild (2020 - present)
+    - *Frostland* » Icewind Dale: Rime of the Frostmaiden (2021 - present)
 - Liminal Horror
     - The Bureau (2022 - present), Zoom
     - The Mall (2022 - present), Pbp
@@ -23,10 +23,10 @@ I made the table of contents to list the games by the year I played. I considere
 - Pokemon Grim (2022 - present), Pbp
 - DIE RPG (In preparation), Pbp
 - Whitehack (2022 - present), Pbp
-- Void Priestess » *Hitobito No Hikari - Heian Jidai* (2022 - present), Pbp
-- The Last Tea Shop (2022 - present), Pbp
-- The Electrum Archives, (2022 - present), Pbp
+- *Void Priestess* » Hitobito No Hikari - Heian Jidai (2022 - present), Pbp
+- Last Tea Shop (2022 - present), Pbp
+- Electrum Archives, (2022 - present), Pbp
 
 ### On Hiatus
 - Mothership RPG
-    - Delve, Descent, DEEP » *Gradient Descent* (2020 - 2022)
+    - *Delve, Descent, DEEP* » Gradient Descent (2020 - 2022)
