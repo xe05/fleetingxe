@@ -13,7 +13,7 @@ I made the table of contents to list the games by the year I played. I considere
 - Project Hunger » *The Resistance Toolbox by RRD* (2022 - present)
 - D&D5e (Play-by-Post aka Pbp)
     - Infernal Build Machine (2020 - present)
-    - Frostland » *Rime of Frostmaiden: Icewind Dale* (2021 - present)
+    - Frostland » *Icewind Dale: Rime of the Frostmaiden* (2021 - present)
 - Liminal Horror
     - The Bureau (2022 - present), Zoom
     - The Mall (2022 - present), Pbp
