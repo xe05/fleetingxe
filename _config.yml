@@ -7,8 +7,4 @@ url: https://xe05.github.io/fleetingxe
 plugins:
   - jekyll-default-layout
 
-aux_links:
-  "itch.io":
-    - "//fleetingxe.itch.io"
-
 color_scheme: dark
