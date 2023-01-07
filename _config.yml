@@ -5,7 +5,7 @@ url: https://xe05.github.io/fleetingxe
 plugins:
   - jekyll-default-layout
   - jekyll-seo-tag
-color_scheme: dark
+color_scheme: light
 heading_anchors: true
 
 # Set a path/url to a favicon that will be displayed by the browser
