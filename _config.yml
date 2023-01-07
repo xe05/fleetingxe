@@ -2,9 +2,7 @@ title: fleetingXe's Journal of Floating Atoms
 description: This is test.
 theme: just-the-docs
 
-url: 
-  "fleetingXe":
-    - "https://xe05.github.io/fleetingxe"
+url: https://xe05.github.io/fleetingxe
 
 plugins:
   - jekyll-default-layout
