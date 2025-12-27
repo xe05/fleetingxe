@@ -94,7 +94,8 @@ They are given in order of preference, with later fonts being fallbacks
 if the first is unavailable.
 
 If you wish to use another font, the recommended option is to import from
-Fontsource.
+Fontsource, if the font is available. Fontsource hosts mostly the fonts you'll find on google fonts.
+If the font you're trying to install is not available on Fontsource, see below "Addind a font locally"
 
 1. If you're using npm as a package manager
 First install the font package
@@ -135,7 +136,39 @@ Add it to your sytles (uncomment it in this file) and add it to the desired stac
 }
 */
 
+/* Adding a font locally 
+If you want to add custom font locally do the following
 
+1. Place the font files in public/fonts (create the fonts folder if it doesn't exists)
+2. Be sure to have the fonts available in different formats, to ensure portability over multiple devices: include woff2, woff, otf, ttf formats 
+2.a If you don't have the fonts in all the formats use a font coverter like https://www.fontsquirrel.com/tools/webfont-generator
+3. Add a font-face declaration in this file
+Example below
+Use the font formats in this order: woff2, woff, TTF, OTF, the browser will first try to use the woff2 file which is the most modern format, if it can't it'll try with the woff one and so on
+@font-face {
+     font-family: 'myFont';
+       src: url('/fonts/myFont.woff2') format('woff2'),
+            url('/fonts/myFont.woff') format('woff'),
+            url('/fonts/myFont.ttf') format('truetype'),
+            url('/fonts/myFont.otf') format('opentype');
+       font-weight: normal; Or adjust to the weight of the font
+       font-style: normal; Or adjust to the style of the font
+       font-display: swap; TL;DR keep this, it enusres the borwsers uses a replacement font while it's loading the custom font.
+}
+
+
+Then use it in your css.
+If you want to use it globally assing it to the font stack variables, example if your blog has the STYLE: "sans" setting in blog-config.yaml
+
+:root {
+  --sans-stack: 'myFont', system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+Or assing it to css styles, example
+
+h1 {
+  font-family: "myFont", sans-serif;
+}
 
 /* If you want to overwrite any other style elements, copy the relevant 
 code from the default file and insert below with the parts you
@@ -149,3 +182,5 @@ and the footer is set with the hr element: */
     font-size: 0;
     border: 0;
 } */
+
+
