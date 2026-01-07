@@ -17,7 +17,7 @@ const image = CONFIG.BANNER.src ? imagesArray.filter(([key, val]) => key.endsWit
 
 ---
 {CONFIG.BANNER.src && (<div class="">
-    <a href={import.meta.env.BASE_URL}>
+    <a href={import.meta.env.BASE_URL} data-astro-prefetch>
     <Picture
     loading={"lazy"}
     class="banner"
