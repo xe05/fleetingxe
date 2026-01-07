@@ -9,7 +9,7 @@ import { CONFIG } from "@config";
 
 export async function GET(context) {
     const blog = await getCollection('posts');
-    console.log(blog[0].body)
+
     let site = context.site?.toString() || import.meta.env.SITE;
 
     if (!site) {
@@ -48,7 +48,7 @@ export async function GET(context) {
               }),
             // Compute RSS link from post `id`
             // This example assumes all posts are rendered as `/blog/[id]` routes
-            link: `${post.slug}/`,
+            link: `${post.id}/`,
           })),
         // (optional) inject custom xml
         customData: `<language>${CONFIG.LANG}</language>`,
