@@ -188,19 +188,20 @@ hr {
 }
 
 @font-face {
-  font-family: "Gidole";
-  src: url("/fonts/Gidole-Regular.ttf") format("truetype");
+  font-family: 'Gidolinya';
+  src: url('/fonts/gidolinya-regular-webfont.woff2') format('woff2'),
+       url('/fonts/gidolinya-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+
 }
 
 @font-face {
-  font-family: "Gidolinya";
-  src: url("/fonts/Gidolinya-Regular.otf") format("opentype");
+  font-family: 'Gidole';
+  src: url('/fonts/Gidole-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+
 }
 
 body {
@@ -371,3 +372,24 @@ img.fullscreen {
   object-fit: cover;
 }
 
+.dead-god {
+  font-size: var(--size-0);
+  height: auto;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  z-index: 9999;
+  background-color:rgba(0, 0, 0, 0.5);
+  color: white !important;
+  padding: 0;
+  margin: 0;
+}
+
+.dead-god * {
+  color: rgb(255, 234, 237) !important;
+  font-size: 0.8rem;
+  padding: 0;
+  margin: 0;
+  padding: 5px;
+
+}

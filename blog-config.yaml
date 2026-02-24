@@ -17,10 +17,10 @@ POST_THUMBNAILS: true # Show post cover in lists of posts
 POST_SUGGESTIONS: false # Suggest more posts to read based on tags
 HOME_NB_POSTS: 6 # Number of posts to show on the home page
 MENU: # Main menu 
-  - label: Blog # Example menu label
-    url: http://www.thecodedtype.com # Example menu url
-  - label: Store # Example menu label
+  - label: Zines # Example menu label
     url: http://www.thelostbaystudio.com # Example menu url
+  - label: rss
+    url: https://thelostbayrpg.com/rss.xml
 
 EDITOR:
   GITHUBUSER: # Github user name
