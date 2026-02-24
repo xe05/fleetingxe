@@ -5,6 +5,8 @@ declare module "@config" {
       DESCRIPTION: string;
       LANG: string;
       DATE_LANG: string;
+      
+      SITE_BANNER: boolean;
 
       STYLE: string;
 

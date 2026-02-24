@@ -1,0 +1,74 @@
+/** character generator **/
+
+.separator {
+    border-top:1px dashed var(--primary-color);
+    margin-top: var(--space-base);
+}
+
+.scars {
+    padding: 0;
+}
+.scars li {
+    padding:0;
+    list-style-type: none;
+    padding: 1rem 0;
+    border-bottom: 1px dotted var(--primary-color);
+}
+
+#chargenhead a {
+    text-decoration: dotted !important;
+    text-decoration-line: underline !important;
+}
+
+#chargenhead a:hover {
+    text-decoration: solid !important;
+    text-decoration-line: underline !important;
+}
+
+#character input, #chargenhead input {
+    min-width: initial; 
+    padding:1px;
+    border-radius: 0;
+}
+
+span {
+    color: var(--primary-color);
+}
+
+.input {
+    box-sizing: border-box;
+    padding: 1rem;
+    width: 100%;
+    color: var(--primary-color);
+    font-size: 0.9rem;
+    font-family: "TASA Orbiter Text", "Helvetica Neue", "Helvetica",  sans-serif;
+
+}
+
+.input { 
+    padding: 0.2rem !important;
+    
+}
+
+.input {
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+}
+
+a {
+    cursor: pointer;
+}
+
+
+@media print {
+    #chargenhead {
+        display: none;
+    }
+
+    .input {
+        border: none;
+        color: black;
+
+    }
+
+}

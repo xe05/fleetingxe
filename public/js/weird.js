@@ -1,0 +1,40 @@
+const yamlWeird = `
+   - You danced at the Blue Moon until you realized everyone else was dead.
+   - You got lost on an abandoned highway and wandered for days until you passed out.
+   - You were in a car crash, and your soul was kicked off your body for a while.
+   - You entered the wrong house, a small prefab near an ancient wood. The only thing you remember is a kid holding your hand.
+   - You witnessed the stars dance and draw patterns in the sky.
+   - You played Summer of Blood, your fave video game, until the arcade blew up and lacerated your face.
+   - You looked at yourself in the mirror of the Silver Orchid’s toilets, and couldn't recognize yourself.
+   - You unintentionally replied to the ghost of a dead relative, who was asking something casual.
+   - You kissed Lea the Beggar and found a half-chewed tarot card in your mouth.
+   - You got stabbed in the heart and somehow survived.
+   - You camped in a forest where white beetles laid eggs under your skin.
+   - You went to a clinic for an eye exam, and came back with stitches on the back of your head.
+   - You stared for too long at a trash pyre, until it stared back at you.
+   - You answered a telephone and heard your own voice describing the moment of your death.
+   - You accidentally stumbled upon a forbidden radio frequency and heard an emergency broadcast from the near future.
+   - You skinny-dipped in the Purple Lagoon and were pulled below by something soft and warm.
+   - You played a hand-pressed vinyl backwards.
+   - You got root access to the Hacker's subserver and read her encrypted diary.
+   - 
+   - 
+   - You interned with the Channel 7 night news mobile crew, and wish you could unsee what you witnessed.
+   - You drank WaterBlood by mistake to quench your thirst.
+   - You watched the Velvet VHS a second time.
+   - You were in a backyard fight and were hammered until unconscious.
+   - You participated in a test trial of Noble Rock's latest experimental drug.
+   - You found a page ripped from Book of Bones in a garbage bin can and read it.
+   - You shared a snack with a famished stranger, who was a Living Saint.
+   - You struck a deal with a Living Saint as you were stuck in a burning vehicle.
+   - You scared off a pack of wild dogs that were about to maul you.
+   - You improvised a tarot reading with the wrong card deck.
+   - You drowned while attempting to snatch something shiny underwater.
+   - You tried on the Other Life 3D Reality headset. Despite exiting the game, you’re not sure you’re actually back in reality.
+   - You fought a Dreamhunter in a nightmare, and lost.
+   - You went to a birthday party you weren't invited to, and tried the cake.
+   - You discovered the Archive of Dreadful Deaths in the public library.
+   - You didn't sleep for a week to prep for an exam, which you failed.
+   - You took the Bottomless Staircase.
+   - You're just pretending to be someone else. It's working.
+`;

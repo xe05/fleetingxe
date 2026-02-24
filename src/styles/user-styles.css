@@ -183,4 +183,191 @@ and the footer is set with the hr element: */
     border: 0;
 } */
 
+hr {
+  display: none;
+}
+
+@font-face {
+  font-family: "Gidole";
+  src: url("/fonts/Gidole-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gidolinya";
+  src: url("/fonts/Gidolinya-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: snow;
+
+  background-image: url('/img/paper-effect.png');
+    
+  background-size: 100%; 
+  background-blend-mode: difference;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+* { 
+  font-family: 'Gidolinya' !important;
+  font-weight: normal !important;
+  font-size: var(--size-0);
+}
+
+strong {
+  background-color: var(--color-secondary-lighter);
+  color: var(--color-secondary);
+}
+
+h1 {
+  color: var(--color-secondary);
+  text-transform: uppercase;
+}
+
+h1, .site-title {
+  font-size: var(--size-5);
+
+  color: white;
+  background-color: var(--color-secondary);
+  text-transform: uppercase;
+
+  padding: 2px 4px;
+}
+h1 {
+  display: inline-block;
+
+}
+h2, h3, h4, h5 {
+  font-size: var(--size-6);
+}
+
+article h2 {
+  font-size: var(--size-5);
+  color: white;
+  background-color: var(--color-primary-darker);
+  text-transform: uppercase;
+
+  display: inline-block;
+
+  padding: 2px 4px;
+}
+
+h3 {
+  font-size: var(--size-6);
+  color: white;
+  background-color: var(--color-primary-light);
+  text-transform: uppercase;
+
+  display: inline-block;
+
+  padding: 2px 4px;
+}
+
+h4 {
+  font-size: var(--size-6);
+  color: white;
+  background-color: var(--color-primary-lighter);
+  color: var(--color-primary);
+
+  display: inline-block;
+
+  padding: 2px 4px;
+}
+
+h2, h2 a {
+  font-size: var(--size-0);
+  font-weight: bold;
+}
+
+a, h2 + a {
+  font-size: var(--size-0);
+  background-color: none !important;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-transform: uppercase;
+}
+
+a:hover {
+  background-color: var(--color-secondary-lighter);
+  text-decoration: none !important;
+}
+
+a.site-title {
+  text-decoration: none !important;
+}
+
+body {
+  /* Initialize everything, but h1 will not be displayed */
+  counter-reset: h2-count h3-count h4-count h5-count;
+}
+
+/* 1. H1 acts only as a reset point for the smaller headers */
+ h1 {
+  counter-reset: h2-count;
+}
+
+/* 2. H2 Display */
+article h2 {
+  counter-increment: h2-count;
+  counter-reset: h3-count;
+}
+
+article h2::before {
+  content: counter(h2-count) ". ";
+}
+
+/* 3. H3 Display (Nested style: e.g., 1.1) */
+article h3 {
+  counter-increment: h3-count;
+  counter-reset: h4-count;
+}
+article h3::before {
+  content: counter(h2-count) "." counter(h3-count) " ";
+}
+
+/* 4. H4 Display (e.g., 1.1.1) */
+article h4 {
+  counter-increment: h4-count;
+  counter-reset: h5-count;
+}
+article  h4::before {
+  content: counter(h2-count) "." counter(h3-count) "." counter(h4-count) " ";
+}
+
+/* 5. H5 Display */
+article h5 {
+  counter-increment: h5-count;
+}
+article h5::before {
+  content: counter(h2-count) "." counter(h3-count) "." counter(h4-count) "." counter(h5-count) " ";
+}
+
+nav {
+  position: relative;
+  z-index: 200;
+  mix-blend-mode: multiply;
+}
+
+/* Full screen images */
+img.fullscreen {
+  height: 100vh;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  margin: 0;
+  padding: 0;
+}
+img.fullscreen {
+  object-fit: cover;
+}
 

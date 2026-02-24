@@ -14,8 +14,8 @@
   --color-primary-darker: oklch(25% calc(1 * var(--color-primary-chroma)) var(--color-primary-hue));
 
   /* Secondary Definition */
-  --color-secondary-chroma: 0.1249;
-  --color-secondary-hue: 227.69;
+  --color-secondary-chroma: 0.1743;;
+  --color-secondary-hue: 11.37;
 
   --color-secondary: oklch(55% var(--color-secondary-chroma) var(--color-secondary-hue));
 

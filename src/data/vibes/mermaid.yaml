@@ -1,0 +1,44 @@
+- vibe: Mermaid
+  by: Verdant Core
+  description: >
+    The sea calls to you; you yearn to return to the surf and the embrace of the waves. This land brings only pain and pollution and you need to escape the past to commune with the currents.
+    You’re a Mermaid, and you serve The Siren.
+
+  offering:
+    - Rest underwater
+    - Drink salt water
+    - Sing a song to someone
+    - Destroy a possession in water
+    - Bestow good fortune
+    - Give directions to the lost
+
+  gifts:
+    - Siren’s call, draw someone to you from a distance by singing
+    - Fishtongue, speak with fish
+    - Triton’s Kiss, grant underwater breathing for one hour
+    - Drown, fill a being’s lungs with water
+    - Boon, give someone a piece of good luck (requires an object)
+
+  gear:
+    - PUNK. Steel chain necklace and padlock, disposable lighter, ‘concrete hold’ hair wax
+    - GOTH. Side-shield sunglasses, black fingerless gloves, switchblade
+    - BOARDWALKER. Steel comb, surfing magazine, water bottle
+    - LARPER. Replica medieval weapon, vintage comic, impressive set of dice
+    - JOKER. Drysack with snacks, boardwalk pass, smoke bomb
+    - DIVER. Diving knife, disposable waterproof camera, aquatic natural history book
+
+  saint:
+    name: The Siren
+    form: A faded lounge singer, overdressed and ready to take the stage | Half human, half eagle, all fury
+    shrine: Neglected bar
+    clergy: Old fishermen retching salt water
+    omen: Salt water rain
+    relic: A tarnished mirror. When broken, water gouts from it and floods the area with seawater
+
+  scars:
+    - DROWNED. You can’t draw breath as though waves are crashing over your head. Briny water arcs from your throat. Everything tastes salty now. What burden of your past have you purged?
+    - SERENADE. The Siren sings to you alone, feathers erupt painfully through your flesh in response. What secret is revealed in the haunting lullaby?
+    - SYRINX. You heave and cough up bloody morsels of flesh, your vocal cords. Your voice has been replaced by a bird’s sweet song. Who can understand your words now?
+    - SUBMARINER. The voices of the vast sinking dead fill your ears, you need to scream to drown it out. Is this a vision of the your future?
+    - INNSMOUTH. The deep favours you; your features painfully melt and reset in a damp fish-like visage. Who is friend enough to stay with you?
+    - TAIL. Your legs twist and bones crack and meld agonisingly, reforming themselves into (roll 1d6. 1.fish tail, 2.serpentine tail, 3.seal lower body, 4.dual serpentine tails, 5.lobster tail, 6.crocodile lower body). Your transformation is complete; what act must you complete before you return to the deep waters?

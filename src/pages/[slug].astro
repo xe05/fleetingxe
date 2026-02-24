@@ -54,12 +54,14 @@ import Cover from "src/components/cover.astro";
     <PostHeader title={title} description={description} pubDate={post.data.pubDate} tags={tags} />
 
     <Content />
-
-    <PostFooter
+    {/*
+        <PostFooter
       queryFilters={queryFilters}
       heading={frontmatter.postSuggestionHeading}
       nbPosts={2}
     />
+    */}
+
   </article>
   <PrintFooter />
 </Baselayout>

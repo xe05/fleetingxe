@@ -1,0 +1,311 @@
+---
+import BaseLayout from "../layouts/baselayout.astro";
+import "../styles/character-generator.css";
+
+// Importing all yaml files
+const modules = import.meta.glob('/src/data/vibes/*.yaml', { eager: true, query: '?raw' });
+
+const yamlVibes = Object.values(modules).map( module => module.default).join('\n\n');
+---
+
+<script is:inline src="/js/names.js"></script>
+<script is:inline src="/js/weird.js"></script>
+<script is:inline src="/js/skills.js"></script>
+<script is:inline src="/js/calling.js"></script>
+
+<script is:inline type="module" define:vars={{ yamlVibes }} >
+    // 1. Import the library from a CDN that serves ES modules (.mjs)
+    import jsyaml from "https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.mjs";
+
+    function parseYaml(yamlsString) {
+        try {
+            // 2. Use jsyaml.load() to parse a YAML string into a JS object
+            const dataObject = jsyaml.load(yamlsString);
+            return dataObject;
+        } catch (e) {
+            console.error(e);
+        }
+    }
+
+    // Data Loading
+    const skillsData = await parseYaml(yamlSkills);
+    const callingsData = await parseYaml(yamlCalling);
+    const weirdData = await parseYaml(yamlWeird);
+    const namesData = await parseYaml(yamlNames);
+    const vibeData = await parseYaml(yamlVibes);
+
+    // Populate Vibe selector
+    const selectVibe = document.getElementById('select-vibe');
+
+    const allVibes = vibeData.map(vibe => vibe.vibe);
+
+    for (const vibe of allVibes) {
+        let opt = document.createElement('option');
+        // opt.value = vibe;
+        opt.innerHTML = vibe;
+        selectVibe.appendChild(opt);
+    }
+        
+
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+    }
+
+    function rnd(nb, array) {
+        let arr = Array.isArray(array) ? array : [array];
+        let result = [];
+        for (let j = 0; j < nb; j++) {
+            if (arr.length === 0) break;
+            const index = getRandomInt(arr.length);
+            const [e] = arr.splice(index, 1);
+            result.push(e);
+        }
+        return result;
+    }
+
+    function getText(element) {
+        const elt = document.getElementById(element);
+        return elt.textContent;
+    }
+
+    function getValue(element) {
+        elt = document.getElementById(element);
+        return elt.value;
+    }
+
+    function setText(element, text) {
+        const elt = document.getElementById(element);
+        elt.innerHTML = text;
+        // elt.setAttribute('value', text);
+    }
+
+    function addText(element, text) {
+        const elt = document.getElementById(element);
+        elt.innerHTML += text;
+        elt.setAttribute('value', text);
+    }
+
+    function arrayToList(items, className = "") {
+        return `<ul class="${className}">${items.map((item) => `<li>${item}</li>`).join("")}</ul>`;
+    }
+
+    // Global variable for genrated charcter, next implement classes
+    let generatedCharacter = {};
+
+
+    function generateCharacter( character = {}, selectedVibe ) { // character = object, selectVibe = string, vibe name
+        character.name = rnd(1, namesData)[0];
+        character.age = 17 + getRandomInt(6);
+        character.calling = rnd(1, callingsData)[0];
+        character.howDidYouGetTheWeird = rnd(1, weirdData)[0];
+        character.skills = rnd(1, skillsData)[0];
+
+        let vibe = selectedVibe
+            ? vibeData.find((v) => v.vibe === selectedVibe)
+            : rnd(1, vibeData)[0];
+
+        // sets selector to selected vibe 
+        selectVibe.value = vibe.vibe;
+        // Ensure vibe was found before proceeding
+        if (!vibe) {
+            console.error("Could not find the selected vibe:", selectedVibe);
+            return;
+        }
+
+        character.vibe = vibe.vibe;
+        character.by = vibe.by;
+        character.description = vibe.description;
+        character.saint = vibe.saint;
+        
+        character.scars = vibe.scars.map(element => (
+            {description: element,
+            checked: false}
+        )
+        );
+
+        character.gear = rnd(1, vibe.gear)[0];
+        character.weird = getRandomInt(3) + 1;
+        character.gifts = rnd(character.weird, vibe.gifts).join('<br>');
+
+        character.offering = rnd(1, vibe.offering)[0];
+    
+        return character;
+    }
+
+function getCharacter() {
+        let character = {}
+        character.name = getText("name");
+        character.age = getText("age");
+        character.calling = getText("calling");
+        character.howDidYouGetTheWeird = getText("howDidYouGetTheWeird");
+        character.skills = getText("skills");
+        character.vibe = getText("vibe");
+        character.by = getText("by");
+        character.description = getText("description");
+        character.gear = getText("gear");
+        character.weird = getText("weird");
+        character.offering = getText("offering");
+
+        character.gifts = getText("gifts");
+        character.saint = {}; 
+        character.saint.name = getText("saint");
+        character.saint.form = getText("form");
+        character.saint.clergy = getText("clergy");
+        character.saint.clergy = getText("shrine");
+        character.saint.omen = getText("omen");
+        character.saint.relic = getText("relic");
+
+        character.scars = [];
+
+        for (let i = 0; i <6; i++){
+            const descEl = document.getElementById(`scar-description-${i}`);
+            const checkEl = document.getElementById(`scar-checked-${i}`);
+
+            character.scars[i] = {
+                description: descEl ? descEl.textContent.trim() : "",
+                checked: checkEl ? checkEl.checked : false
+            };
+        }
+
+        return character;
+}
+
+
+function renderCharacter(character) {
+        setText("name", character.name);
+        setText("age", character.age);
+        setText("calling", character.calling);
+        setText("howDidYouGetTheWeird", character.howDidYouGetTheWeird);
+        setText("skills", character.skills);
+        setText("vibe", character.vibe);
+        setText("vibe2", character.vibe);
+
+        setText("by", character.by);
+        setText("description", character.description);
+        setText("gear", character.gear);
+        setText("weird", character.weird);
+        setText("offering", character.offering);
+
+        setText("gifts", character.gifts);
+        setText("saint", character.saint.name);
+        setText("form", character.saint.form);
+        setText("clergy", character.saint.clergy);
+        setText("shrine", character.saint.shrine);
+        setText("omen", character.saint.omen);
+        setText("relic", character.saint.relic);
+        
+        setText("scars", '');
+
+        for (let i=0; i < character.scars.length; i++){
+            const checked = character.scars[i].checked ? 'checked' : '';
+            addText("scars", `<li class="mb-base"><input class="mr-base" type="checkbox" ${checked} id="scar-checked-${i}" name="scar-checked-${i}" /><span id="scar-description-${i}">${character.scars[i].description}</span></li>`);
+        }
+}
+
+
+
+
+// Generate first character on load
+generatedCharacter = generateCharacter(generatedCharacter);
+
+// Render character
+renderCharacter(generatedCharacter);
+
+// Get Character from forms
+
+
+function saveCharacter() {
+    let characterSave = getCharacter();
+    localStorage.setItem('savedCharacter',JSON.stringify(characterSave));
+}
+
+function loadCharacter() {
+    const savedData = localStorage.getItem('savedCharacter');
+    if (savedData) {
+        const loadedCharacter = JSON.parse(savedData);
+        return loadedCharacter;
+    }
+}
+
+const save = document.getElementById('save');
+
+save.addEventListener("click", (event) => {
+    saveCharacter();
+    alert('Saved');
+});
+
+const loadButton = document.getElementById('load');
+
+loadButton.addEventListener("click", (event) => {
+    generatedCharacter = loadCharacter(); 
+    renderCharacter(generatedCharacter);
+});
+
+// On selector change
+selectVibe.addEventListener("change", (event) => {
+    generatedCharacter = generateCharacter(generatedCharacter, event.target.value);
+    renderCharacter(generatedCharacter);
+
+});
+
+
+</script>
+<style></style>
+<BaseLayout>
+    <h1 class="title">Character generator</h1>
+    <div id="chargenhead">
+        <strong><a id="save">Save</a></strong> <strong class="ml-md"><a id="load">Load</a></strong>
+
+        <p>Reload to regenerate, or pick a different Vibe: <select class="mb-md ml-base" name="select-vibe" id="select-vibe"></select></p>    
+    </div>
+
+
+    <section id="character">
+       
+
+        <p id="" class="mb-base mt-lg"></p>
+        <div class="">
+            <span id=""><strong>Name: </strong><span  contenteditable class="input"   id="name" ></span></span> <span class="ml-md" id=""> <strong>Age: </strong><span  contenteditable class="input" =""  id="age" ></span></span>
+            <p id=""><strong>Calling: </strong><span  contenteditable class="input"   id="calling" ></span></p>
+
+        </div>
+        
+
+
+        <div class="separator">
+            <p><strong>Vibe: </strong><span id="vibe" class="mr-base"></span><strong class="">Weird: </strong><span  contenteditable class="input"   id="weird" ></span> <strong class="ml-xl" >Offering: </strong><span  contenteditable class="input" =""  id="offering" ></span></p>
+            <div class="">
+                <p id=""><strong>How did you get the weird: </strong></p>
+                <div contenteditable class="input"  id="howDidYouGetTheWeird" ></div>
+            </div>
+            <div class=" mt-base"><span><strong>Vibe description :</strong></span></div>
+            <div contenteditable class="input"  id="description" ></div>
+
+            <div class="mt-base">
+                <span id="vibe2" class=""></span><span> is a vibe designed by </span><span id="by"></span>.
+            </div>
+
+
+        </div>
+
+        <div class="separator">
+            <p id=""><strong>Skills: </strong></p>
+            <div  contenteditable class="input"  id="skills"  ></div>
+            <p id=""><strong>Gifts: </strong></p>
+            <div  contenteditable class="input"  id="gifts"  ></div>
+
+        </div>
+       
+        <p id=""><strong>Gear: </strong></p>
+        <div  contenteditable class="input"  id="gear"  ></div>
+
+        <h2 class="mt-lg">Scars</h2>
+        <p id=""><ul id="scars" class="list-style-type-none mw-0 pw-0"></ul></p>
+        <h2 class="mt-lg"><strong>Saint: </strong><span id="saint" ></span></h2>
+        <p><strong>Form: </strong><span id="form"></span></p>
+        <p><strong>Shrine: </strong><span id="shrine"></span></p>
+        <p><strong>Clergy: </strong><span id="clergy"></span></p>
+        <p><strong>Omen: </strong><span id="omen"></span></p>
+        <p><strong>Relic: </strong><span id="relic"></span></p>
+    </section>
+</BaseLayout>

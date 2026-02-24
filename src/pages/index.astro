@@ -8,7 +8,10 @@ import Home from "../data/home.mdx"
 ---
 
 <BaseLayout>
-  <h1>{CONFIG.TITLE}</h1>
+  
   <Home />
+  <div class="mt-xl">
+    <a href="/character-generator/">Character Generator</a>
     <QueryPosts nbPosts={CONFIG.HOME_NB_POSTS} hasCover={CONFIG.POST_COVER} sectionHeaderContentClass="duo-lg"/>
+  </div>
 </BaseLayout>

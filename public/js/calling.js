@@ -1,0 +1,38 @@
+const yamlCalling = `
+   - Convince Luca you are worthy of their love.
+   - Gain back the trust of the child you betrayed.
+   - Free Sasha’s ghost from torment.
+   - Wake Taylor from their lifeless slumber.
+   - Speak to your mother one last time before she dies.
+   - Track down Carmine’s murderer.
+   - Get out of your debt to the Backyard Free Fight Renaissance.
+   - Infiltrate the True Church.
+   - Expose the truth about Noble Rock.
+   - Hire the Hacker to recode someone you hate.
+   - Kill all three Neon Bishops.
+   - Find a cause to fight for.
+   - Recall whose blue eyes stared at you that night.
+   - Quiet the voice that haunts your dreams.
+   - Cure the Pale Blight that is consuming your flesh.
+   - Get rid of the shame of having failed the Fire Kiss.
+   - Forget something you wish you had never witnessed.
+   - Be remembered after your death.
+   - Bring an offering to the lost Shrine of All Saints.
+   - Free yourself from the hold of your immortal Living Saint.
+   - Prove immortals are nothing more than superstition.
+   - Convince the Night Baron to become your mentor.
+   - Steal a Soulflame from the afterlife.
+   - Learn the prayers-that-cheat-death.
+   - Find a way out of the Lost Bay.
+   - Travel back in time to when you were younger.
+   - Retrieve the blade that took your father’s life.
+   - Locate your long-missing sibling.
+   - Find a place you can call home.
+   - Discover the secret of your birthmark.
+   - Contemplate the three Black Stone Eyes.
+   - Play the vinyl that sparked the Summer of Blood.
+   - Learn the secrets of the Books of Bones.
+   - Drink the WaterBlood.
+   - Cast a replica of the Golden Mask.
+   - Amass cash.
+`;
