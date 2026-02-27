@@ -11,7 +11,9 @@ import Home from "../data/home.mdx"
   
   <Home />
   <div class="mt-xl">
-    <a href="/character-generator/">Character Generator</a>
-    <QueryPosts nbPosts={CONFIG.HOME_NB_POSTS} hasCover={CONFIG.POST_COVER} sectionHeaderContentClass="duo-lg"/>
+    <a href="/character-generator/" class="page-link mr-base mt-base">Character Generator</a>
+    <a href="https://docs.google.com/spreadsheets/d/1viV25Klt70ifyLAbeLszf3jIZhDYuUTzOJhNLgMMVdk/edit?usp=sharing" class="mt-base page-link">Online Character Keeper (Google sheets)</a>
+
+    <QueryPosts nbPosts={CONFIG.HOME_NB_POSTS} hasCover={CONFIG.POST_THUMBNAILS} sectionHeaderContentClass="trio-lg post-preview"/>
   </div>
 </BaseLayout>

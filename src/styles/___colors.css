@@ -1,6 +1,6 @@
 :root {
   /* Background Definition */
-  --color-background: #FFFFFF;
+  --color-background: snow;
   
   /* Pimary Definition */
   --color-primary-chroma: 0.0345;
@@ -12,7 +12,7 @@
   --color-primary-light: oklch(70% calc(1 * var(--color-primary-chroma)) var(--color-primary-hue));
   --color-primary-dark: oklch(40% calc(1 * var(--color-primary-chroma)) var(--color-primary-hue));
   --color-primary-darker: oklch(25% calc(1 * var(--color-primary-chroma)) var(--color-primary-hue));
-  
+
   /* Secondary Definition */
   --color-secondary-chroma: 0.1743;;
   --color-secondary-hue: 11.37;

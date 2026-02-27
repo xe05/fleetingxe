@@ -372,6 +372,54 @@ img.fullscreen {
   object-fit: cover;
 }
 
+section.post-preview  {
+  display: block;
+}
+
+.article-header h2 {
+
+}
+
+article-header-content{
+  /*
+  filter: contrast(1.75) grayscale(1);
+  */
+  margin-top: -1rem;
+}
+
+main a.page-link, main ul li a {
+  
+  border: 1px solid var(--color-secondary-darker);
+  position: relative;
+  display: inline-block;
+  padding: 4px;
+  text-decoration: none;
+  box-shadow: 4px 4px 0px var(--color-secondary);
+  
+}
+
+main a.page-link:hover, main ul li a:hover {
+  
+  border: 1px solid var(--color-secondary-darker);
+  position: relative;
+  display: inline-block;
+  padding: 4px;
+  text-decoration: none;
+  box-shadow: 2px 2px 0px var(--color-secondary);
+  
+}
+
+main ul {
+  margin-top: -10px !important;
+}
+
+article-header-content img {
+  border: 1px solid var(--color-secondary-darker);
+  position: relative;
+  display: none;
+  box-shadow: 4px 4px 0px var(--color-secondary);
+}
+
 .dead-god {
   font-size: var(--size-0);
   height: auto;
