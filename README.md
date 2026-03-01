@@ -1,12 +1,11 @@
 # Short Intro
 Hello! I'm testing and deploying a blog for some lightweight works.
 
-This is made with [Open Blog Revolution (OBR)](https://github.com/the-coded-type/open-blog-revolution)
-
-**Copy**
-You're free to fork/copy the repository according to the [license](./LICENSE).
 
 ## Credits and aknowledgments
+All credits go to Iko, the designer of OBR.
+
+This is made with [Open Blog Revolution (OBR)](https://github.com/the-coded-type/open-blog-revolution)
 
 Built with [ASTRO](https://astro.build/)
 
